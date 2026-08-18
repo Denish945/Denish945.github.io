@@ -1,0 +1,65 @@
+/* ============================================
+   Responsive Enhancements
+   ============================================ */
+
+/* This file works alongside style.css to ensure
+   the layout is perfect on all devices. The main
+   responsive rules are already in style.css,
+   but we can add more specific overrides here. */
+
+@media (max-width: 768px) {
+    /* Improve touch targets for mobile */
+    .btn {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .hero-image-placeholder svg {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .expertise-block {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .expertise-title {
+        font-size: 0.6rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+}
