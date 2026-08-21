@@ -21,7 +21,8 @@
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Engineering</a></li>
+                <li><a href="aviation.html">Aviation Career</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -41,20 +42,23 @@
                     <span class="page-badge">PORTFOLIO</span>
                     <h1>Engineering Projects</h1>
                     <p class="page-subtitle">
-                        A showcase of aircraft designs, UAV systems, and engineering research
+                        A showcase of personal engineering projects spanning aerospace, software, electronics, and systems
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Project Filters (Optional, but adds interactivity) -->
+        <!-- Project Filters -->
         <section class="filter-section">
             <div class="container">
                 <div class="filter-buttons">
                     <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="aircraft">Aircraft Design</button>
-                    <button class="filter-btn" data-filter="uav">UAV Systems</button>
+                    <button class="filter-btn" data-filter="aircraft">Aerospace</button>
+                    <button class="filter-btn" data-filter="software">Software Development</button>
                     <button class="filter-btn" data-filter="research">Research & Systems</button>
+                    <button class="filter-btn" data-filter="electronics">Electronics & PCB</button>
+                    <button class="filter-btn" data-filter="iot">IoT & Monitoring</button>
+                    <button class="filter-btn" data-filter="opensource">Open Source</button>
                 </div>
             </div>
         </section>
@@ -64,210 +68,181 @@
             <div class="container">
                 <div class="projects-grid" id="projectsGrid">
                     
-                    <!-- Project 1: UAV Design I -->
-                    <div class="project-card" data-category="uav">
-                        <div class="project-image">
-                            <img src="assets/images/projects/uav1/hero.jpg" alt="UAV Design I - Conceptual UAV" loading="lazy" />
-                            <div class="project-overlay">
-                                <span class="project-type">UAV Development</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>UAV Design I</h3>
-                            <p class="project-summary">
-                                Conceptual UAV design with optimized aerodynamics, structural analysis, and propulsion integration.
-                            </p>
-                            <div class="project-tags">
-                                <span>SolidWorks</span>
-                                <span>CFD</span>
-                                <span>Aerodynamics</span>
-                                <span>Structural Analysis</span>
-                            </div>
-                            <a href="projects/uav-design-01.html" class="btn btn-outline btn-sm">View Project →</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 1: RF Communication Network (was Radar System) -->
+                    <!-- Project 1: Crawler Radar System -->
                     <div class="project-card" data-category="research">
                         <div class="project-image">
-                            <img src="assets/images/projects/radar/hero.jpg" alt="Distributed RF Communication Network" loading="lazy" />
+                            <img src="assets/images/projects/crawler/dashboard.jpg" alt="Crawler Radar System" loading="lazy" />
                             <div class="project-overlay">
                                 <span class="project-type">Systems Engineering</span>
+                                <span class="project-status closed">MIT License (Closed)</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3>Distributed Rapid-Deployment RF Communication Network</h3>
+                            <h3>Crawler Radar System</h3>
                             <p class="project-summary">
-                                A low-cost, portable distributed communication network providing resilient connectivity during infrastructure outages.
+                                A low-cost, portable distributed radar communication network providing resilient connectivity and sensing capabilities during infrastructure outages.
                             </p>
+                            <div class="project-meta">
+                                <span class="meta-date">March 2026 - Present</span>
+                                <span class="meta-status closed-source">MIT License (Closed)</span>
+                            </div>
                             <div class="project-tags">
+                                <span>Radar Systems</span>
                                 <span>RF Engineering</span>
+                                <span>Distributed Networks</span>
                                 <span>Systems Architecture</span>
-                                <span>Networking</span>
-                                <span>Mesh Networks</span>
                             </div>
-                            <a href="projects/radar-system.html" class="btn btn-outline btn-sm">View Project →</a>
+                            <a href="projects/aeris10-radar.html" class="btn btn-outline btn-sm">View Project →</a>
                         </div>
                     </div>
 
-                    <!-- Project 2: UAV Design II -->
-                    <div class="project-card" data-category="uav">
-                        <div class="project-image">
-                            <img src="assets/images/projects/uav2/hero.jpg" alt="UAV Design II - Advanced UAV" loading="lazy" />
-                            <div class="project-overlay">
-                                <span class="project-type">UAV Development</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>UAV Design II</h3>
-                            <p class="project-summary">
-                                Advanced UAV with enhanced payload capacity, extended range, and autonomous flight capabilities.
-                            </p>
-                            <div class="project-tags">
-                                <span>SolidWorks</span>
-                                <span>Mission Planning</span>
-                                <span>Autonomous Systems</span>
-                            </div>
-                            <a href="projects/uav-design-02.html" class="btn btn-outline btn-sm">View Project →</a>
-                        </div>
-                    </div>
-
-                    <!-- Project: RF Communication Network -->
-                    <div class="project-card" data-category="research">
-                        <div class="project-image">
-                            <img src="assets/images/projects/radar/hero.jpg" alt="Distributed RF Communication Network" loading="lazy" />
-                            <div class="project-overlay">
-                                <span class="project-type">Systems Engineering</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Distributed Rapid-Deployment RF Communication Network</h3>
-                            <p class="project-summary">
-                                A low-cost, portable distributed communication network providing resilient connectivity during infrastructure outages.
-                            </p>
-                            <div class="project-tags">
-                                <span>RF Engineering</span>
-                                <span>Systems Architecture</span>
-                                <span>Networking</span>
-                                <span>Mesh Networks</span>
-                            </div>
-                            <a href="projects/radar-system.html" class="btn btn-outline btn-sm">View Project →</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: Aircraft Design -->
-                    <div class="project-card" data-category="aircraft">
-                        <div class="project-image">
-                            <img src="assets/images/projects/aircraft/hero.jpg" alt="Aircraft Design Project" loading="lazy" />
-                            <div class="project-overlay">
-                                <span class="project-type">Aircraft Design</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Aircraft Design & Performance</h3>
-                            <p class="project-summary">
-                                Comprehensive aircraft design study covering aerodynamics, performance analysis, and manufacturing.
-                            </p>
-                            <div class="project-tags">
-                                <span>Aerodynamics</span>
-                                <span>Performance Analysis</span>
-                                <span>Manufacturing</span>
-                                <span>Modelling</span>
-                            </div>
-                            <a href="projects/aircraft-design.html" class="btn btn-outline btn-sm">View Project →</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 5: AERIS Aviation Management System -->
+                    <!-- Project 2: AERIS AMS -->
                     <div class="project-card" data-category="software">
                         <div class="project-image">
                             <img src="assets/images/projects/aeris/dashboard.jpg" alt="AERIS Aviation Management System" loading="lazy" />
                             <div class="project-overlay">
                                 <span class="project-type">Software Engineering</span>
+                                <span class="project-status closed">MIT License (Closed)</span>
                             </div>
                         </div>
                         <div class="project-info">
                             <h3>AERIS Aviation Management System</h3>
                             <p class="project-summary">
-                                Full-stack aviation management platform for operational, maintenance, and engineering workflows.
+                                Full-stack aviation management platform for operational, maintenance, and engineering workflows in aviation organizations.
                             </p>
+                            <div class="project-meta">
+                                <span class="meta-date">Jul 2025 - Jun 2026</span>
+                                <span class="meta-status closed-source">MIT License (Closed)</span>
+                            </div>
                             <div class="project-tags">
                                 <span>React</span>
                                 <span>Flask</span>
-                                <span>MongoDB</span>
+                                <span>PostgresQL</span>
                                 <span>Full-Stack</span>
+                                <span>Aviation Software</span>
                             </div>
-                            <a href="projects/aeris-system.html" class="btn btn-outline btn-sm">View Project →</a>
+                            <a href="projects/aeris-ams.html" class="btn btn-outline btn-sm">View Project →</a>
                         </div>
                     </div>
 
-                    <!-- Project 6: Automation & PLC Projects -->
-                    <div class="project-card" data-category="automation">
+                    <!-- Project 3: Class 2 Network Communication PDB -->
+                    <div class="project-card" data-category="electronics opensource">
                         <div class="project-image">
-                            <img src="assets/images/projects/electronics/plc-setup.jpg" alt="PLC Automation Projects" loading="lazy" />
-                            <div class="project-overlay">
-                                <span class="project-type">Automation</span>
-                            </div>
-                        </div>
-                        <div class="project-info">
-                            <h3>Industrial Automation & PLC</h3>
-                            <p class="project-summary">
-                                PLC programming, control systems, and industrial automation projects for manufacturing and engineering.
-                            </p>
-                            <div class="project-tags">
-                                <span>PLC</span>
-                                <span>Control Systems</span>
-                                <span>Automation</span>
-                            </div>
-                            <a href="projects/automation-electronics.html" class="btn btn-outline btn-sm">View Project →</a>
-                        </div>
-                    </div>
-
-                    <!-- Project 7: Electronics & KiCad -->
-                    <div class="project-card" data-category="electronics">
-                        <div class="project-image">
-                            <img src="assets/images/projects/electronics/kicad-pcb.jpg" alt="KiCad Electronics Projects" loading="lazy" />
+                            <img src="assets/images/projects/class2Network/dashboard.png" alt="Class 2 Network Communication PDB" loading="lazy" />
                             <div class="project-overlay">
                                 <span class="project-type">Electronics</span>
+                                <span class="project-status open">Open Source</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3>Electronics Design & KiCad</h3>
+                            <h3>Class 2 Network Communication PDB</h3>
                             <p class="project-summary">
-                                PCB design, circuit development, and electronics prototyping using KiCad and other tools.
+                                Power Distribution Board with integrated network communication capabilities for embedded systems and IoT applications.
                             </p>
+                            <div class="project-meta">
+                                <span class="meta-date">Jul 2026 - Aug 2026</span>
+                                <span class="meta-status open-source">Open Source</span>
+                            </div>
                             <div class="project-tags">
+                                <span>PCB Design</span>
+                                <span>Network Communication</span>
+                                <span>KiCad</span>
+                                <span>Embedded Systems</span>
+                            </div>
+                            <a href="projects/class2-network-pdb.html" class="btn btn-outline btn-sm">View Project →</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: High Power Smart Switch -->
+                    <!-- <div class="project-card" data-category="electronics opensource">
+                        <div class="project-image">
+                            <img src="assets/images/projects/smart-switch/hero.jpg" alt="High Power Smart Switch" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-type">Electronics</span>
+                                <span class="project-status open">Open Source</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>High Power Smart Switch</h3>
+                            <p class="project-summary">
+                                High-power switching solution with smart control capabilities, designed for industrial and automation applications.
+                            </p>
+                            <div class="project-meta">
+                                <span class="meta-date">Apr 2026</span>
+                                <span class="meta-status open-source">Open Source</span>
+                            </div>
+                            <div class="project-tags">
+                                <span>Power Electronics</span>
+                                <span>Switching Systems</span>
                                 <span>KiCad</span>
                                 <span>PCB Design</span>
-                                <span>Electronics</span>
                             </div>
-                            <a href="projects/automation-electronics.html" class="btn btn-outline btn-sm">View Project →</a>
+                            <a href="projects/high-power-smart-switch.html" class="btn btn-outline btn-sm">View Project →</a>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- Project 8: Software Development -->
-                    <div class="project-card" data-category="software">
+                    <!-- Project 5: Fixed-Wing Surveillance Drone -->
+                    <div class="project-card" data-category="aircraft">
                         <div class="project-image">
-                            <img src="assets/images/projects/software/code-samples.jpg" alt="Software Development Projects" loading="lazy" />
+                            <img src="assets/images/projects/fixedWingDrone/asopy drone.png" alt="Fixed-Wing Surveillance Drone" loading="lazy" />
                             <div class="project-overlay">
-                                <span class="project-type">Software Development</span>
+                                <span class="project-type">Aircraft Design</span>
+                                <span class="project-status in-progress">In Progress</span>
                             </div>
                         </div>
                         <div class="project-info">
-                            <h3>Software Engineering Projects</h3>
+                            <h3>Fixed-Wing Surveillance Drone(Asopy Aircraft Design)</h3>
                             <p class="project-summary">
-                                Python applications, JavaScript tools, and full-stack development projects for engineering applications.
+                                Conceptual fixed-wing surveillance drone with optimized aerodynamics, extended endurance, and autonomous flight capabilities.
                             </p>
-                            <div class="project-tags">
-                                <span>Python</span>
-                                <span>JavaScript</span>
-                                <span>Full-Stack</span>
-                                <span>APIs</span>
+                            <div class="project-meta">
+                                <span class="meta-date">Jul 2026 - Present</span>
+                                <span class="meta-status in-progress">In Progress</span>
                             </div>
-                            <a href="projects/software-projects.html" class="btn btn-outline btn-sm">View Project →</a>
+                            <div class="project-tags">
+                                <span>SolidWorks</span>
+                                <span>CFD</span>
+                                <span>Aerodynamics</span>
+                                <span>Autonomous Systems</span>
+                                <span>Structural Analysis</span>
+                            </div>
+                            <a href="projects/fixed-wing-surveillance-drone.html" class="btn btn-outline btn-sm">View Project →</a>
                         </div>
                     </div>
 
+                    <!-- Project 6: Air Quality Monitor -->
+                    <!-- <div class="project-card" data-category="iot opensource">
+                        <div class="project-image">
+                            <img src="assets/images/projects/air-quality/hero.jpg" alt="Air Quality Monitor" loading="lazy" />
+                            <div class="project-overlay">
+                                <span class="project-type">IoT & Monitoring</span>
+                                <span class="project-status open">Open Source</span>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Air Quality Monitor</h3>
+                            <p class="project-summary">
+                                Open-source environmental monitoring system with real-time air quality sensing, data visualization, and analytics capabilities.
+                            </p>
+                            <div class="project-meta">
+                                <span class="meta-date">Sep 2025 - Oct 2026</span>
+                                <span class="meta-status open-source">Open Source</span>
+                            </div>
+                            <div class="project-tags">
+                                <span>IoT</span>
+                                <span>Sensor Systems</span>
+                                <span>Data Visualization</span>
+                                <span>Embedded Systems</span>
+                            </div>
+                            <a href="projects/air-quality-monitor.html" class="btn btn-outline btn-sm">View Project →</a>
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <!-- No Results Message -->
+                <div id="noResults" style="display: none; text-align: center; padding: 3rem 0;">
+                    <p style="color: #8892B0; font-size: 1.1rem;">No projects found for this category.</p>
                 </div>
             </div>
         </section>
@@ -285,7 +260,41 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script src="js/projects.js"></script>
-    <script src="js/gallery.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            const noResults = document.getElementById('noResults');
+
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Update active button
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+
+                    const filter = this.dataset.filter;
+                    let visibleCount = 0;
+
+                    projectCards.forEach(card => {
+                        const categories = card.dataset.category.split(' ');
+                        
+                        if (filter === 'all' || categories.includes(filter)) {
+                            card.style.display = 'block';
+                            visibleCount++;
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+
+                    // Show/hide no results message
+                    if (visibleCount === 0) {
+                        noResults.style.display = 'block';
+                    } else {
+                        noResults.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

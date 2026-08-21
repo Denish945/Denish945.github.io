@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Wireless High Power Smart Switch - Open source Industry 4.0 WiFi controlled solid-state relay with current sensing" />
+    <title>High Power Smart Switch · Samson Denish Were</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Samson Denish Were</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../aviation.html">Aviation Career</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero" style="background: linear-gradient(135deg, #0a192f 0%, #1a2a4a 100%); position: relative; overflow: hidden;">
+            <div class="container" style="position: relative; z-index: 2;">
+                <div class="project-hero-content">
+                    <a href="../projects.html" class="back-link">← Back to Projects</a>
+                    <span class="project-hero-badge" style="background: #64FFDA; color: #0a192f;">OPEN SOURCE</span>
+                    <h1 style="color: #FFFFFF;">High Power Smart Switch</h1>
+                    <p class="project-hero-subtitle" style="color: #CCD6F6;">
+                        Wireless solid-state relay with WiFi control, current measurement, PWM capability, and smart safety features — designed for Industry 4.0 and smart home applications.
+                    </p>
+                    <div class="project-meta" style="color: #8892B0;">
+                        <div class="meta-item">
+                            <span class="meta-label">Status</span>
+                            <span class="meta-value" style="color: #64FFDA;">Production Ready</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">License</span>
+                            <span class="meta-value" style="color: #CCD6F6;">MIT Open Source</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Platform</span>
+                            <span class="meta-value" style="color: #CCD6F6;">ESP8266 · KiCad</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Repository</span>
+                            <span class="meta-value" style="color: #CCD6F6;">
+                                <a href="https://github.com/Denish945/CoolSWITCH" target="_blank" style="color: #64FFDA; text-decoration: none;">GitHub →</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-grid">
+                    <div class="project-content">
+                        <h2>Overview</h2>
+                        <p>
+                            The <strong>CoolSWITCH</strong> is a wireless high-power smart switch designed for Industry 4.0 applications. It functions as a wireless solid-state relay with integrated current sensing, PWM control, soft start/stop, and comprehensive safety features. The device is built around Infineon's 600V CoolMOS™ C7 Gold MOSFETs and an ESP8266 microcontroller.
+                        </p>
+
+                        <h3>What Problem Does It Solve?</h3>
+                        <p>
+                            Industry 4.0 requires smart equipment that can communicate, self-monitor, and predict failures. Traditional mechanical relays have moving parts that wear out, lack communication capabilities, and cannot provide real-time operational data. The CoolSWITCH addresses these limitations by offering a solid-state, wirelessly controllable switch that continuously monitors current consumption and can be integrated into predictive maintenance systems.
+                        </p>
+
+                        <h3>Key Features</h3>
+                        <ul class="features-list">
+                            <li>
+                                <strong>Wide Voltage Range</strong>
+                                <span>Operates from 12–300 VDC and 87–230 VAC, making it suitable for both low-voltage DC and mains AC applications.</span>
+                            </li>
+                            <li>
+                                <strong>High Current Capacity</strong>
+                                <span>Supports up to 50A (DC/AC) with low ON-state resistance comparable to mechanical relays.</span>
+                            </li>
+                            <li>
+                                <strong>Wireless Control</strong>
+                                <span>Built-in WiFi (ESP8266) with HTTP/REST API and MQTT support for remote control and monitoring.</span>
+                            </li>
+                            <li>
+                                <strong>Current Sensing</strong>
+                                <span>Integrated Infineon TLI4970 current sensor provides real-time load current measurement for monitoring and predictive maintenance.</span>
+                            </li>
+                            <li>
+                                <strong>PWM Capability</strong>
+                                <span>Supports speed and power control via pulse-width modulation.</span>
+                            </li>
+                            <li>
+                                <strong>Safety Features</strong>
+                                <span>Automatic over-current detection and shutdown, secure communication, and fail-safe operation.</span>
+                            </li>
+                            <li>
+                                <strong>Soft Start/Stop</strong>
+                                <span>Gradual switching to prevent inrush current and voltage spikes.</span>
+                            </li>
+                            <li>
+                                <strong>Compact Design</strong>
+                                <span>PCB footprint of approximately 70×50mm with modular power supply options.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="sidebar-card" style="background: rgba(10, 25, 47, 0.95); border: 1px solid rgba(100, 255, 218, 0.15);">
+                            <h4>Repository</h4>
+                            <div style="margin-bottom: 1rem;">
+                                <a href="https://github.com/Denish945/CoolSWITCH" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center; display: block;">
+                                    <span style="display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                        <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor" style="flex-shrink: 0;">
+                                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                                        </svg>
+                                        View on GitHub
+                                    </span>
+                                </a>
+                            </div>
+
+                            <h4>Technology Stack</h4>
+                            <div class="tech-stack">
+                                <div class="tech-group">
+                                    <span class="tech-label">Hardware</span>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">ESP8266</span>
+                                        <span class="tech-badge">CoolMOS™ C7</span>
+                                        <span class="tech-badge">TLI4970</span>
+                                        <span class="tech-badge">1EDI Gate Driver</span>
+                                    </div>
+                                </div>
+                                <div class="tech-group">
+                                    <span class="tech-label">PCB Design</span>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">KiCad</span>
+                                        <span class="tech-badge">2oz Copper</span>
+                                        <span class="tech-badge">4-Layer</span>
+                                    </div>
+                                </div>
+                                <div class="tech-group">
+                                    <span class="tech-label">Firmware</span>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">Arduino C++</span>
+                                        <span class="tech-badge">ESP8266 SDK</span>
+                                    </div>
+                                </div>
+                                <div class="tech-group">
+                                    <span class="tech-label">Protocols</span>
+                                    <div class="tech-items">
+                                        <span class="tech-badge">HTTP/REST</span>
+                                        <span class="tech-badge">MQTT</span>
+                                        <span class="tech-badge">mDNS</span>
+                                        <span class="tech-badge">Diffie-Hellman</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr style="border: none; border-top: 1px solid rgba(100, 255, 218, 0.1); margin: 1.5rem 0;" />
+
+                            <h4>License</h4>
+                            <p style="font-size: 0.9rem; color: #8892B0;">
+                                This project is released under the <strong style="color: #64FFDA;">MIT License</strong>. 
+                                Hardware designs, firmware, and software are all open source.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hardware Design -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Hardware Design</h2>
+                
+                <div class="hardware-grid">
+                    <!-- Block: Architecture -->
+                    <div class="hardware-block">
+                        <h3>System Architecture</h3>
+                        <div class="arch-diagram" style="background: rgba(10, 25, 47, 0.8); border-radius: 1rem; padding: 2rem; text-align: center; border: 1px solid rgba(100, 255, 218, 0.1);">
+                            <div class="arch-flow" style="display: flex; flex-direction: column; gap: 0.5rem; align-items: center;">
+                                <div style="background: rgba(100, 255, 218, 0.1); padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.2); width: 100%; max-width: 300px;">
+                                    <span style="color: #64FFDA; font-weight: 600;">ESP8266 (Logic)</span>
+                                </div>
+                                <span style="color: #8892B0;">▼</span>
+                                <div style="background: rgba(100, 255, 218, 0.1); padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.2); width: 100%; max-width: 300px;">
+                                    <span style="color: #64FFDA; font-weight: 600;">1EDI Gate Driver</span>
+                                </div>
+                                <span style="color: #8892B0;">▼</span>
+                                <div style="background: rgba(100, 255, 218, 0.1); padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.2); width: 100%; max-width: 300px;">
+                                    <span style="color: #64FFDA; font-weight: 600;">CoolMOS™ MOSFETs</span>
+                                </div>
+                                <span style="color: #8892B0;">▼</span>
+                                <div style="background: rgba(100, 255, 218, 0.1); padding: 0.75rem 1.5rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.2); width: 100%; max-width: 300px;">
+                                    <span style="color: #64FFDA; font-weight: 600;">Load (AC/DC)</span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 1rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="display: inline-block; width: 12px; height: 12px; background: #64FFDA; border-radius: 50%;"></span>
+                                    <span style="color: #8892B0; font-size: 0.85rem;">Control Path</span>
+                                </div>
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span style="display: inline-block; width: 12px; height: 12px; background: #FF6B6B; border-radius: 50%;"></span>
+                                    <span style="color: #8892B0; font-size: 0.85rem;">Power Path</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block: Key Components -->
+                    <div class="hardware-block">
+                        <h3>Key Components</h3>
+                        <div class="components-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                            <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #64FFDA;">
+                                <h4 style="color: #64FFDA; font-size: 0.9rem;">MOSFET</h4>
+                                <p style="font-size: 0.85rem; color: #8892B0;">Infineon IPT60R028G7XTMA1<br/>600V CoolMOS™ C7</p>
+                            </div>
+                            <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #64FFDA;">
+                                <h4 style="color: #64FFDA; font-size: 0.9rem;">Gate Driver</h4>
+                                <p style="font-size: 0.85rem; color: #8892B0;">Infineon 1EDI Series<br/>Galvanic isolation</p>
+                            </div>
+                            <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #64FFDA;">
+                                <h4 style="color: #64FFDA; font-size: 0.9rem;">Current Sensor</h4>
+                                <p style="font-size: 0.85rem; color: #8892B0;">Infineon TLI4970<br/>SPI interface</p>
+                            </div>
+                            <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border-left: 3px solid #64FFDA;">
+                                <h4 style="color: #64FFDA; font-size: 0.9rem;">MCU</h4>
+                                <p style="font-size: 0.85rem; color: #8892B0;">ESP8266 ESP-12-E<br/>WiFi + TCP/IP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PCB Design Section -->
+                <div style="margin-top: 2rem;">
+                    <h3>PCB Design (KiCad)</h3>
+                    <div class="pcb-features" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+                        <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                            <span style="color: #64FFDA; font-weight: 600;">70×50mm</span>
+                            <p style="color: #8892B0; font-size: 0.85rem; margin: 0.25rem 0 0;">Compact footprint</p>
+                        </div>
+                        <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                            <span style="color: #64FFDA; font-weight: 600;">2oz Copper</span>
+                            <p style="color: #8892B0; font-size: 0.85rem; margin: 0.25rem 0 0;">High current capacity</p>
+                        </div>
+                        <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                            <span style="color: #64FFDA; font-weight: 600;">2mm Clearance</span>
+                            <p style="color: #8892B0; font-size: 0.85rem; margin: 0.25rem 0 0;">High voltage safety</p>
+                        </div>
+                        <div style="background: rgba(10, 25, 47, 0.6); padding: 1rem; border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                            <span style="color: #64FFDA; font-weight: 600;">3 Zones</span>
+                            <p style="color: #8892B0; font-size: 0.85rem; margin: 0.25rem 0 0;">Power · Logic · Supply</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Power Supply Modules -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Modular Power Supply</h2>
+                <p style="color: #8892B0; max-width: 700px; margin-bottom: 2rem;">
+                    The CoolSWITCH uses modular power supplies to support its wide input voltage range. Each module connects via Micro-MaTch board-to-board connectors.
+                </p>
+                <div class="module-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                    <div style="background: rgba(10, 25, 47, 0.6); padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                        <span style="color: #64FFDA; font-size: 1.5rem;">⚡</span>
+                        <h4 style="color: #CCD6F6; margin: 0.5rem 0;">AC/DC Isolated</h4>
+                        <p style="color: #8892B0; font-size: 0.9rem;">100–230 VAC/VDC</p>
+                        <p style="color: #8892B0; font-size: 0.85rem;">Based on IRM-05-12 module</p>
+                        <span style="display: inline-block; margin-top: 0.5rem; background: rgba(100, 255, 218, 0.1); color: #64FFDA; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">Complete</span>
+                    </div>
+                    <div style="background: rgba(10, 25, 47, 0.6); padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                        <span style="color: #64FFDA; font-size: 1.5rem;">🔋</span>
+                        <h4 style="color: #CCD6F6; margin: 0.5rem 0;">High-Voltage DC</h4>
+                        <p style="color: #8892B0; font-size: 0.9rem;">87–300 VDC</p>
+                        <p style="color: #8892B0; font-size: 0.85rem;">Custom LNK3206 design</p>
+                        <span style="display: inline-block; margin-top: 0.5rem; background: rgba(255, 107, 107, 0.1); color: #FF6B6B; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">In Progress</span>
+                    </div>
+                    <div style="background: rgba(10, 25, 47, 0.6); padding: 1.5rem; border-radius: 0.75rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                        <span style="color: #64FFDA; font-size: 1.5rem;">🔌</span>
+                        <h4 style="color: #CCD6F6; margin: 0.5rem 0;">Low-Voltage DC</h4>
+                        <p style="color: #8892B0; font-size: 0.9rem;">15–80 VDC</p>
+                        <p style="color: #8892B0; font-size: 0.85rem;">Off-the-shelf module</p>
+                        <span style="display: inline-block; margin-top: 0.5rem; background: rgba(255, 107, 107, 0.1); color: #FF6B6B; padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem;">In Progress</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Firmware & Software -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Firmware &amp; Software</h2>
+                <p style="color: #8892B0; max-width: 700px; margin-bottom: 2rem;">
+                    The CoolSWITCH runs on the ESP8266 and is programmed in Arduino C++. It exposes a secure HTTP/REST API and publishes data via MQTT.
+                </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <h3 style="color: #CCD6F6;">HTTP/REST API</h3>
+                        <div style="background: rgba(10, 25, 47, 0.6); border-radius: 0.75rem; padding: 1.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">GET /</div>
+                            <div style="color: #8892B0; margin-left: 1rem; margin-bottom: 0.5rem;">→ Hello message with device name</div>
+                            
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">POST /turnOn</div>
+                            <div style="color: #8892B0; margin-left: 1rem; margin-bottom: 0.5rem;">→ Turn switch ON</div>
+                            
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">POST /turnOff</div>
+                            <div style="color: #8892B0; margin-left: 1rem; margin-bottom: 0.5rem;">→ Turn switch OFF</div>
+                            
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">GET /state</div>
+                            <div style="color: #8892B0; margin-left: 1rem; margin-bottom: 0.5rem;">→ Current state (0-4)</div>
+                            
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">GET /current</div>
+                            <div style="color: #8892B0; margin-left: 1rem; margin-bottom: 0.5rem;">→ Load current (Amps)</div>
+                            
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">POST /setValue</div>
+                            <div style="color: #8892B0; margin-left: 1rem;">→ Configure WiFi, MQTT, limits</div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 style="color: #CCD6F6;">MQTT Integration</h3>
+                        <div style="background: rgba(10, 25, 47, 0.6); border-radius: 0.75rem; padding: 1.5rem; font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">
+                            <div style="color: #64FFDA; margin-bottom: 0.5rem;">Published Topics:</div>
+                            <div style="color: #8892B0; margin-left: 1rem; margin-bottom: 0.5rem;">
+                                <span style="color: #FF6B6B;">CoolSWITCH-XXXXXXXXX/state</span>
+                                <span style="display: block; margin-left: 1rem; font-size: 0.75rem;">→ Current switch state</span>
+                            </div>
+                            <div style="color: #8892B0; margin-left: 1rem;">
+                                <span style="color: #FF6B6B;">CoolSWITCH-XXXXXXXXX/current</span>
+                                <span style="display: block; margin-left: 1rem; font-size: 0.75rem;">→ Current consumption (Amps)</span>
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem; background: rgba(10, 25, 47, 0.6); border-radius: 0.75rem; padding: 1.5rem;">
+                            <h4 style="color: #CCD6F6; font-size: 0.9rem;">Security</h4>
+                            <p style="color: #8892B0; font-size: 0.85rem;">
+                                HTTP endpoints are secured with <strong style="color: #64FFDA;">Diffie-Hellman key exchange</strong> 
+                                (Curve25519) and <strong style="color: #64FFDA;">HMAC-SHA256</strong> authentication. 
+                                Sequence numbers prevent replay attacks.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Code Example -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Code Example</h2>
+                <p style="color: #8892B0; max-width: 700px; margin-bottom: 1.5rem;">
+                    Below is a minimal example showing how to control the CoolSWITCH using Python requests.
+                </p>
+                <div style="background: #0d1a2b; border-radius: 0.75rem; padding: 1.5rem; overflow-x: auto; border: 1px solid rgba(100, 255, 218, 0.1);">
+                    <pre style="font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; color: #CCD6F6; margin: 0; line-height: 1.8;"><code><span style="color: #8892B0;"># Python client example for CoolSWITCH</span>
+<span style="color: #FF6B6B;">import</span> requests
+<span style="color: #FF6B6B;">import</span> hmac
+<span style="color: #FF6B6B;">import</span> hashlib
+<span style="color: #FF6B6B;">import</span> time
+
+<span style="color: #64FFDA;">class</span> <span style="color: #FFD700;">CoolSwitch</span>:
+    <span style="color: #64FFDA;">def</span> <span style="color: #FFD700;">__init__</span>(self, host, shared_secret):
+        self.host = host
+        self.secret = shared_secret
+        self.seq_nr = <span style="color: #FF6B6B;">0</span>
+
+    <span style="color: #64FFDA;">def</span> <span style="color: #FFD700;">_sign_request</span>(self, uri):
+        self.seq_nr += <span style="color: #FF6B6B;">1</span>
+        nonce = str(int(time.time() * <span style="color: #FF6B6B;">1000</span>))
+        message = f<span style="color: #64FFDA;">"{uri}?seqNr={self.seq_nr}&nonce={nonce}"</span>
+        signature = hmac.new(
+            self.secret.encode(),
+            message.encode(),
+            hashlib.sha256
+        ).hexdigest()
+        <span style="color: #64FFDA;">return</span> f<span style="color: #64FFDA;">"{message}&hmac={signature}"</span>
+
+    <span style="color: #64FFDA;">def</span> <span style="color: #FFD700;">turn_on</span>(self):
+        uri = <span style="color: #64FFDA;">"/turnOn"</span>
+        url = f<span style="color: #64FFDA;">"http://{self.host}{self._sign_request(uri)}"</span>
+        <span style="color: #64FFDA;">return</span> requests.post(url)
+
+    <span style="color: #64FFDA;">def</span> <span style="color: #FFD700;">turn_off</span>(self):
+        uri = <span style="color: #64FFDA;">"/turnOff"</span>
+        url = f<span style="color: #64FFDA;">"http://{self.host}{self._sign_request(uri)}"</span>
+        <span style="color: #64FFDA;">return</span> requests.post(url)
+
+    <span style="color: #64FFDA;">def</span> <span style="color: #FFD700;">get_state</span>(self):
+        url = f<span style="color: #64FFDA;">"http://{self.host}/state"</span>
+        <span style="color: #64FFDA;">return</span> requests.get(url).json()
+
+<span style="color: #8892B0;"># Usage example</span>
+switch = CoolSwitch(<span style="color: #64FFDA;">"CoolSWITCH-4548297.local"</span>, <span style="color: #64FFDA;">"your_shared_secret"</span>)
+switch.turn_on()
+print(switch.get_state())  <span style="color: #8892B0;"># {'state': 1}</span></code></pre>
+                </div>
+                <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://github.com/Denish945/CoolSWITCH" target="_blank" class="btn btn-outline btn-sm">View Full Source →</a>
+                    <a href="https://github.com/Denish945/CoolSWITCH/tree/main/examples" target="_blank" class="btn btn-outline btn-sm">More Examples →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Journey -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Development Journey</h2>
+                <div class="process-timeline">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-content">
+                            <h3>Concept &amp; Requirements</h3>
+                            <p>Identified the need for a wireless solid-state relay with current sensing for Industry 4.0 applications. Defined voltage/current ranges and feature set.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-content">
+                            <h3>Schematic Design</h3>
+                            <p>Designed the circuit in KiCad, selecting the CoolMOS™ C7 MOSFETs, 1EDI gate driver, TLI4970 current sensor, and ESP8266 MCU.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-content">
+                            <h3>PCB Layout &amp; Manufacturing</h3>
+                            <p>Laid out the 70×50mm 4-layer PCB with 2oz copper. Manufactured by PCBWay with black silkscreen finish.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-content">
+                            <h3>Assembly &amp; Testing</h3>
+                            <p>Assembled the boards and performed smoke tests. Verified WiFi connectivity, current sensing accuracy, and switching capability on both DC and AC loads.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <div class="step-content">
+                            <h3>Firmware Development</h3>
+                            <p>Developed the Arduino C++ firmware with HTTP/REST API, MQTT publishing, security (Diffie-Hellman + HMAC), and state machine control.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">06</div>
+                        <div class="step-content">
+                            <h3>Open Source Release</h3>
+                            <p>Released all hardware design files (KiCad), firmware source code, and Python client libraries under the MIT License.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem; color: #8892B0;">
+                    PCB renders, assembled boards, and testing photos
+                </p>
+                <div class="gallery-grid" id="coolswitchGallery">
+                    <div class="gallery-item" data-full="../assets/images/projects/coolswitch/pcb-render.jpg">
+                        <img src="../assets/images/projects/coolswitch/pcb-render.jpg" alt="KiCad PCB Render" loading="lazy" />
+                        <div class="gallery-caption">KiCad PCB Render</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/coolswitch/assembled-board.jpg">
+                        <img src="../assets/images/projects/coolswitch/assembled-board.jpg" alt="Assembled Main Board" loading="lazy" />
+                        <div class="gallery-caption">Assembled Main Board</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/coolswitch/power-module.jpg">
+                        <img src="../assets/images/projects/coolswitch/power-module.jpg" alt="Power Supply Module" loading="lazy" />
+                        <div class="gallery-caption">100-230V Power Module</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/coolswitch/testing-dc.jpg">
+                        <img src="../assets/images/projects/coolswitch/testing-dc.jpg" alt="DC Testing" loading="lazy" />
+                        <div class="gallery-caption">12V DC Testing</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/coolswitch/testing-ac.jpg">
+                        <img src="../assets/images/projects/coolswitch/testing-ac.jpg" alt="AC Testing" loading="lazy" />
+                        <div class="gallery-caption">230V AC Testing</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/coolswitch/current-sensing.jpg">
+                        <img src="../assets/images/projects/coolswitch/current-sensing.jpg" alt="Current Sensing" loading="lazy" />
+                        <div class="gallery-caption">TLI4970 Current Measurement</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Resources -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Project Resources</h2>
+                <div class="docs-grid">
+                    <div class="doc-card">
+                        <span class="doc-icon">📂</span>
+                        <h4>GitHub Repository</h4>
+                        <p>Complete source code, PCB designs, and documentation</p>
+                        <a href="https://github.com/Denish945/CoolSWITCH" target="_blank" class="doc-link">View Repository →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">📄</span>
+                        <h4>Hardware Files</h4>
+                        <p>KiCad schematics, PCB layout, and BOM</p>
+                        <a href="https://github.com/Denish945/CoolSWITCH/tree/main/hardware" target="_blank" class="doc-link">View Hardware →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">⚙️</span>
+                        <h4>Firmware</h4>
+                        <p>Arduino C++ source code for ESP8266</p>
+                        <a href="https://github.com/Denish945/CoolSWITCH/tree/main/firmware" target="_blank" class="doc-link">View Firmware →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">🐍</span>
+                        <h4>Python Client</h4>
+                        <p>Python library for controlling the switch</p>
+                        <a href="https://github.com/Denish945/CoolSWITCH/tree/main/python-client" target="_blank" class="doc-link">View Client →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Samson Denish Were. Built with <span style="color:#FF6B6B;">❤</span> on GitHub Pages.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Denish945" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:denishwere.articles@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

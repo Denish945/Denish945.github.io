@@ -22,7 +22,8 @@
             <ul class="nav-links">
                 <li><a href="/" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Engineering</a></li>
+                <li><a href="aviation.html">Aviation Career</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -52,11 +53,11 @@
                     <div class="hero-expertise">
                         <div class="expertise-block">
                             <span class="expertise-title">AERONAUTICAL</span>
-                            <span>Aircraft Design · Performance Analysis · Structural Modeling · CFD</span>
+                            <span>Aircraft Design · Performance Analysis · Conceptual Modeling · CFD · Structural Modeling · CAD · FEA</span>
                         </div>
                         <div class="expertise-block">
                             <span class="expertise-title">MAINTENANCE</span>
-                            <span>Maintenance Principles · Airworthiness · Technical Records · Planning</span>
+                            <span>Maintenance Principles · Airworthiness Management · Technical Records · Maintenance Planning</span>
                         </div>
                         <div class="expertise-block">
                             <span class="expertise-title">TECHNOLOGY</span>
@@ -71,18 +72,28 @@
                     </div>
                 </div>
 
-                <!-- Placeholder for an engineering visual or photo -->
+                <!-- Profile Image OR SVG Placeholder -->
                 <div class="hero-visual">
-                    <div class="hero-image-placeholder">
-                        <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="200" cy="200" r="180" stroke="#00D4FF" stroke-width="2" stroke-dasharray="10 10" />
-                            <path d="M80 200 L320 200" stroke="#00D4FF" stroke-width="1.5" />
-                            <path d="M200 80 L200 320" stroke="#00D4FF" stroke-width="1.5" />
-                            <circle cx="200" cy="200" r="60" stroke="#FFFFFF" stroke-width="1.5" />
-                            <path d="M160 160 L240 240 M240 160 L160 240" stroke="#FFFFFF" stroke-width="1.5" />
-                            <rect x="170" y="170" width="60" height="60" stroke="#00D4FF" stroke-width="1" fill="rgba(0,212,255,0.05)" />
-                            <text x="200" y="250" font-family="'JetBrains Mono', monospace" font-size="16" fill="#8892B0" text-anchor="middle">+ ENGINEERING</text>
-                        </svg>
+                    <div class="hero-image-wrapper">
+                        <!-- Try to load profile image, fallback to SVG if it fails -->
+                        <img 
+                            src="assets/profile.jpeg" 
+                            alt="Samson Denish Were - Aeronautical Engineer" 
+                            class="hero-profile-image"
+                            onerror="this.style.display='none'; document.getElementById('fallbackSvg').style.display='block';"
+                        />
+                        <div id="fallbackSvg" class="hero-image-placeholder" style="display: none;">
+                            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="200" cy="200" r="180" stroke="#00D4FF" stroke-width="2" stroke-dasharray="10 10" />
+                                <path d="M80 200 L320 200" stroke="#00D4FF" stroke-width="1.5" />
+                                <path d="M200 80 L200 320" stroke="#00D4FF" stroke-width="1.5" />
+                                <circle cx="200" cy="200" r="60" stroke="#FFFFFF" stroke-width="1.5" />
+                                <path d="M160 160 L240 240 M240 160 L160 240" stroke="#FFFFFF" stroke-width="1.5" />
+                                <rect x="170" y="170" width="60" height="60" stroke="#00D4FF" stroke-width="1" fill="rgba(0,212,255,0.05)" />
+                                <text x="200" y="250" font-family="'JetBrains Mono', monospace" font-size="16" fill="#8892B0" text-anchor="middle">+ ENGINEERING</text>
+                            </svg>
+                        </div>
+                        <div class="hero-image-ring"></div>
                     </div>
                 </div>
             </div>
@@ -100,12 +111,12 @@
                     <span class="stat-label">Years in Software Development</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">4+</span>
-                    <span class="stat-label">Software Systems Built</span>
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Personal Projects</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-number">∞</span>
-                    <span class="stat-label">Passion for Building</span>
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Aircraft Types Worked On</span>
                 </div>
             </div>
         </section>
@@ -116,7 +127,7 @@
                 <h3 class="section-title">Engineering Philosophy</h3>
                 <div class="philosophy-content">
                     <p>
-                        <strong>I like building things.</strong> My interests sit between physical engineering and digital systems. I enjoy taking an engineering problem, understanding the underlying physics and constraints, developing a design, and then using software and modern engineering tools to analyze, automate, or improve the solution.
+                        A strong interest in engineering design is driven by the process of turning concepts into functional solutions. This involves exploring new ideas, understanding the underlying principles and constraints, developing and evaluating design concepts, and applying modern engineering and digital tools to refine them. The focus is not only on solving existing problems, but also on identifying opportunities to create better, more efficient, and innovative systems.
                     </p>
                 </div>
             </div>
@@ -129,21 +140,21 @@
                 <div class="featured-grid">
                     <div class="featured-card">
                         <div class="card-tag">AIRCRAFT DESIGN</div>
-                        <h4>Long-Range Fixed-Wing UAV</h4>
-                        <p>Conceptual fixed-wing, propeller-driven UAV developed around long-range surveillance, aerodynamic efficiency, endurance, manufacturability and local aerospace capability.</p>
-                        <a href="projects/uav-design-01.html" class="card-link">View Project →</a>
-                    </div>
-                    <div class="featured-card">
-                        <div class="card-tag">SYSTEMS ENGINEERING</div>
-                        <h4>Distributed RF Communication Network</h4>
-                        <p>A low-cost, portable distributed communication network providing resilient connectivity during infrastructure outages and network disruptions.</p>
-                        <a href="projects/radar-system.html" class="card-link">View Project →</a>
+                        <h4>Fixed-Wing Surveillance Drone</h4>
+                        <p>Conceptual fixed-wing drone designed for surveillance missions with optimized aerodynamics, endurance, and autonomous flight capabilities.</p>
+                        <a href="projects/fixed-wing-surveillance-drone.html" class="card-link">View Project →</a>
                     </div>
                     <div class="featured-card">
                         <div class="card-tag">SOFTWARE ENGINEERING</div>
-                        <h4>AERIS Aviation Management System</h4>
-                        <p>Full-stack aviation management platform designed to digitize operational, maintenance and engineering workflows.</p>
-                        <a href="projects/aeris-system.html" class="card-link">View Project →</a>
+                        <h4>AERIS AMS</h4>
+                        <p>Full-stack aviation management platform designed to digitize operational, maintenance and engineering workflows for aviation organizations.</p>
+                        <a href="projects/aeris-ams.html" class="card-link">View Project →</a>
+                    </div>
+                    <div class="featured-card">
+                        <div class="card-tag">SYSTEMS ENGINEERING</div>
+                        <h4>Crawler Radar System</h4>
+                        <p>Open-source rapid deployment radar system with phased array technology for surveillance, reconnaissance, and situational awareness.</p>
+                        <a href="projects/aeris10-radar.html" class="card-link">View Project →</a>
                     </div>
                 </div>
                 <div class="center-action">
@@ -152,35 +163,75 @@
             </div>
         </section>
 
-        <!-- DIGITAL ENGINEERING SECTION -->
-        <section id="digital-engineering" class="digital-section">
+        <!-- KEY HIGHLIGHTS -->
+        <section id="highlights" class="featured-section alt-bg">
             <div class="container">
-                <h3 class="section-title">Digital Engineering</h3>
+                <h3 class="section-title">Key Highlights</h3>
+                <div class="featured-grid">
+                    <div class="featured-card">
+                        <div class="card-tag">AVIATION</div>
+                        <h4>Aircraft Maintenance Technician</h4>
+                        <p>Currently serving at Air Direct Connect Limited as an Avionics Technician in the Battery Shop, working on DHC 8 Classics, CRJ 200, Challenger 350, Fokker 70/50, and Boeing 737-300.</p>
+                        <a href="aviation.html" class="card-link">View Aviation Experience →</a>
+                    </div>
+                    <div class="featured-card">
+                        <div class="card-tag">SOFTWARE</div>
+                        <h4>Full-Stack Developer</h4>
+                        <p>5+ years of software development experience with expertise in React, Flask, NodeJS, PostgreSQL, MongoDB, and Python. Building engineering solutions that bridge aviation and technology.</p>
+                        <a href="projects.html?filter=software" class="card-link">View Software Projects →</a>
+                    </div>
+                    <div class="featured-card">
+                        <div class="card-tag">CERTIFICATION</div>
+                        <h4>Non-Destructive Inspection</h4>
+                        <p>Trained in Eddy Current Testing, Liquid Penetrant Testing, Ultrasonic Inspection, and Magnetic Particle Testing at Kenya Airways, with hands-on application in aircraft maintenance.</p>
+                        <a href="aviation.html#training" class="card-link">View Trainings →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK LINKS / EXPERTISE AREAS -->
+        <section id="expertise-areas" class="digital-section">
+            <div class="container">
+                <h3 class="section-title">Areas of Expertise</h3>
+                <p class="section-subtitle">Exploring the intersection of aviation, engineering, and technology</p>
                 <div class="digital-grid">
-                    <div class="digital-card">
+                    <a href="aviation.html#aircraft" class="digital-card">
                         <div class="digital-icon">✈️</div>
-                        <h4>AERIS Aviation System</h4>
-                        <p>Full-stack aviation management platform for maintenance, inventory, and operations.</p>
-                        <a href="projects/aeris-system.html" class="card-link">View Project →</a>
-                    </div>
-                    <div class="digital-card">
-                        <div class="digital-icon">⚙️</div>
-                        <h4>Automation & PLC</h4>
-                        <p>Industrial automation, PLC programming, and control systems for manufacturing.</p>
-                        <a href="projects/automation-electronics.html" class="card-link">View Project →</a>
-                    </div>
-                    <div class="digital-card">
+                        <h4>Aircraft Systems</h4>
+                        <p>Comprehensive knowledge of aircraft systems, structures, and maintenance procedures across 8+ aircraft types including turboprops, regional jets, and helicopters.</p>
+                        <span class="card-link">Explore Aviation →</span>
+                    </a>
+                    <a href="aviation.html#planning" class="digital-card">
+                        <div class="digital-icon">📋</div>
+                        <h4>Maintenance Planning</h4>
+                        <p>MSG3 planning doctrines, work package preparation, technical records management, and regulatory compliance under KCARs.</p>
+                        <span class="card-link">View Planning Skills →</span>
+                    </a>
+                    <a href="projects.html" class="digital-card">
+                        <div class="digital-icon">🛠️</div>
+                        <h4>Engineering Projects</h4>
+                        <p>Aerospace design, electronics, PCB development, software engineering, and systems integration projects.</p>
+                        <span class="card-link">View Projects →</span>
+                    </a>
+                    <a href="projects.html?filter=electronics" class="digital-card">
                         <div class="digital-icon">🔌</div>
-                        <h4>Electronics & KiCad</h4>
-                        <p>PCB design, circuit development, and electronics prototyping.</p>
-                        <a href="projects/automation-electronics.html" class="card-link">View Project →</a>
-                    </div>
-                    <div class="digital-card">
+                        <h4>Electronics &amp; PCB</h4>
+                        <p>PCB design using KiCad, embedded systems development with Arduino and Raspberry Pi, and electronics prototyping for engineering applications.</p>
+                        <span class="card-link">View Electronics →</span>
+                    </a>
+                    <a href="projects.html?filter=opensource" class="digital-card">
                         <div class="digital-icon">💻</div>
-                        <h4>Software Development</h4>
-                        <p>Python applications, JavaScript tools, and full-stack development.</p>
-                        <a href="projects/software-projects.html" class="card-link">View Project →</a>
-                    </div>
+                        <h4>Open Source</h4>
+                        <p>Open source contributions including Class 2 Network Communication PDB, High Power Smart Switch, and Air Quality Monitor projects.</p>
+                        <span class="card-link">View Open Source →</span>
+                    </a>
+                    <a href="contact.html" class="digital-card">
+                        <div class="digital-icon">📡</div>
+                        <h4>Let's Connect</h4>
+                        <p>Interested in collaborations, engineering challenges, or opportunities at the intersection of aviation, aerospace, and technology.</p>
+                        <span class="card-link">Get in Touch →</span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -190,9 +241,9 @@
         <div class="container footer-content">
             <p>&copy; 2026 Samson Denish Were. Built with <span style="color:#FF6B6B;">❤</span> on GitHub Pages.</p>
             <div class="footer-links">
-                <a href="https://github.com/samsonwere" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/Denish945" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
+                <a href="mailto:denishwere.articles@gmail.com">Email</a>
             </div>
         </div>
     </footer>

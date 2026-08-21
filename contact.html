@@ -20,7 +20,8 @@
             <ul class="nav-links">
                 <li><a href="/">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Engineering</a></li>
+                <li><a href="aviation.html">Aviation Career</a></li>
+                <li><a href="projects.html">Projects</a></li>
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
@@ -64,7 +65,7 @@
                                 <div class="method-details">
                                     <h4>Email</h4>
                                     <p>For professional inquiries and collaborations</p>
-                                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                                    <a href="#" class="contact-btn" id="emailBtn">Send Email →</a>
                                 </div>
                             </div>
 
@@ -73,9 +74,7 @@
                                 <div class="method-details">
                                     <h4>LinkedIn</h4>
                                     <p>Connect with me professionally</p>
-                                    <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer">
-                                        linkedin.com/in/samsonwere
-                                    </a>
+                                    <a href="#" class="contact-btn" id="linkedinBtn">View Profile →</a>
                                 </div>
                             </div>
 
@@ -84,9 +83,7 @@
                                 <div class="method-details">
                                     <h4>GitHub</h4>
                                     <p>View my code and projects</p>
-                                    <a href="https://github.com/samsonwere" target="_blank" rel="noopener noreferrer">
-                                        github.com/samsonwere
-                                    </a>
+                                    <a href="#" class="contact-btn" id="githubBtn">View Repos →</a>
                                 </div>
                             </div>
 
@@ -95,7 +92,7 @@
                                 <div class="method-details">
                                     <h4>Phone</h4>
                                     <p>For urgent inquiries</p>
-                                    <a href="tel:+254XXXXXXXXX">+254 XXX XXX XXX</a>
+                                    <a href="#" class="contact-btn" id="phoneBtn">Reveal Number →</a>
                                 </div>
                             </div>
 
@@ -106,24 +103,6 @@
                                     <p>Based in Kenya, available globally</p>
                                     <span>Nairobi, Kenya</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-social">
-                            <h4>Social Links</h4>
-                            <div class="social-links">
-                                <a href="https://github.com/samsonwere" target="_blank" rel="noopener noreferrer" class="social-link">
-                                    <span class="social-icon">🐙</span> GitHub
-                                </a>
-                                <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer" class="social-link">
-                                    <span class="social-icon">🔗</span> LinkedIn
-                                </a>
-                                <a href="https://twitter.com/samsonwere" target="_blank" rel="noopener noreferrer" class="social-link">
-                                    <span class="social-icon">🐦</span> Twitter
-                                </a>
-                                <a href="mailto:your.email@example.com" class="social-link">
-                                    <span class="social-icon">✉️</span> Email
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -165,6 +144,14 @@
                                 <h4>Message Sent!</h4>
                                 <p>Thank you for reaching out. I'll get back to you shortly.</p>
                             </div>
+
+                            <!-- Note about serverless email -->
+                            <div class="form-note" style="margin-top: 1.5rem; padding: 0.75rem 1rem; background: rgba(0, 212, 255, 0.05); border-radius: 0.5rem; border-left: 3px solid #00D4FF;">
+                                <p style="font-size: 0.8rem; color: #8892B0; margin: 0;">
+                                    ⚡ <strong>Note:</strong> A serverless email system is currently being implemented. 
+                                    Your message will be sent directly to my inbox once the integration is complete.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,9 +192,9 @@
         <div class="container footer-content">
             <p>&copy; 2026 Samson Denish Were. Built with <span style="color:#FF6B6B;">❤</span> on GitHub Pages.</p>
             <div class="footer-links">
-                <a href="https://github.com/samsonwere" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="mailto:your.email@example.com">Email</a>
+                <a href="#" id="footerGitHub">GitHub</a>
+                <a href="#" id="footerLinkedIn">LinkedIn</a>
+                <a href="#" id="footerEmail">Email</a>
             </div>
         </div>
     </footer>
@@ -215,59 +202,85 @@
     <script src="js/main.js"></script>
     <script>
         // ============================================
-        // Contact Form Handling
+        // Contact Form Handling with Pre-filled Message
         // ============================================
         
         document.addEventListener('DOMContentLoaded', function() {
             const form = document.getElementById('contactForm');
             const successDiv = document.getElementById('formSuccess');
 
+            // ============================================
+            // Handle URL parameters for pre-filled form
+            // ============================================
+            function populateFormFromURL() {
+                const params = new URLSearchParams(window.location.search);
+                const subject = params.get('subject');
+                const message = params.get('message');
+
+                if (subject) {
+                    const subjectField = document.getElementById('subject');
+                    if (subjectField) {
+                        subjectField.value = subject.replace(/\+/g, ' ');
+                    }
+                }
+
+                if (message) {
+                    const messageField = document.getElementById('message');
+                    if (messageField) {
+                        messageField.value = message.replace(/\+/g, ' ');
+                    }
+                }
+
+                if (message) {
+                    const messageField = document.getElementById('message');
+                    if (messageField) {
+                        messageField.focus();
+                        messageField.setSelectionRange(messageField.value.length, messageField.value.length);
+                    }
+                }
+            }
+
+            // ============================================
+            // Form submission handling
+            // ============================================
             if (form) {
                 form.addEventListener('submit', function(e) {
                     e.preventDefault();
                     
-                    // Get form values
                     const name = document.getElementById('name').value.trim();
                     const email = document.getElementById('email').value.trim();
                     const subject = document.getElementById('subject').value.trim();
                     const message = document.getElementById('message').value.trim();
 
-                    // Validate required fields
+                    clearErrors();
+
+                    let hasError = false;
+
                     if (!name) {
                         showError('name', 'Please enter your name');
-                        return;
+                        hasError = true;
                     }
                     
                     if (!email) {
                         showError('email', 'Please enter your email address');
-                        return;
-                    }
-                    
-                    if (!email.includes('@') || !email.includes('.')) {
+                        hasError = true;
+                    } else if (!email.includes('@') || !email.includes('.')) {
                         showError('email', 'Please enter a valid email address');
-                        return;
+                        hasError = true;
                     }
                     
                     if (!message) {
                         showError('message', 'Please enter your message');
-                        return;
+                        hasError = true;
                     }
 
-                    // If using Formspree or another service, send the data
-                    // For now, just show success message
-                    
-                    // Log the data (for debugging)
-                    console.log('Form submitted:', { name, email, subject, message });
+                    if (hasError) return;
 
-                    // Show success message
                     form.style.display = 'none';
                     successDiv.style.display = 'block';
-                    
-                    // Scroll to the success message
                     successDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
                 });
 
-                // Clear error states on input
                 const inputs = form.querySelectorAll('input, textarea');
                 inputs.forEach(input => {
                     input.addEventListener('input', function() {
@@ -280,21 +293,17 @@
                 });
             }
 
-            // Helper function to show errors
             function showError(fieldId, message) {
                 const field = document.getElementById(fieldId);
                 if (!field) return;
 
-                // Remove any existing error
                 const existingError = field.parentElement.querySelector('.error-message');
                 if (existingError) {
                     existingError.remove();
                 }
 
-                // Add error class
                 field.classList.add('error');
 
-                // Create error message
                 const errorMsg = document.createElement('span');
                 errorMsg.className = 'error-message';
                 errorMsg.textContent = message;
@@ -303,12 +312,106 @@
                 errorMsg.style.marginTop = '0.25rem';
                 errorMsg.style.display = 'block';
 
-                // Insert after the field
                 field.parentElement.appendChild(errorMsg);
-
-                // Focus the field
                 field.focus();
             }
+
+            function clearErrors() {
+                const errorMessages = document.querySelectorAll('.error-message');
+                errorMessages.forEach(msg => msg.remove());
+                
+                const errorFields = document.querySelectorAll('.error');
+                errorFields.forEach(field => field.classList.remove('error'));
+            }
+
+            populateFormFromURL();
+
+            // ============================================
+            // Reveal/Hide Contact Details with Buttons
+            // ============================================
+            
+            // Email Button
+            const emailBtn = document.getElementById('emailBtn');
+            if (emailBtn) {
+                emailBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const email = 'denishwere.articles@gmail.com';
+                    this.textContent = email;
+                    this.style.color = '#64FFDA';
+                    this.style.pointerEvents = 'none';
+                    // Copy to clipboard
+                    navigator.clipboard.writeText(email).then(() => {
+                        setTimeout(() => {
+                            this.textContent = '📋 Copied!';
+                            setTimeout(() => {
+                                this.textContent = 'Send Email →';
+                                this.style.color = '';
+                                this.style.pointerEvents = '';
+                            }, 2000);
+                        }, 500);
+                    }).catch(() => {
+                        // Fallback - just show it
+                    });
+                });
+            }
+
+            // LinkedIn Button
+            const linkedinBtn = document.getElementById('linkedinBtn');
+            if (linkedinBtn) {
+                linkedinBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open('https://linkedin.com/in/samsonwere', '_blank');
+                });
+            }
+
+            // GitHub Button
+            const githubBtn = document.getElementById('githubBtn');
+            if (githubBtn) {
+                githubBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    window.open('https://github.com/Denish945', '_blank');
+                });
+            }
+
+            // Phone Button
+            const phoneBtn = document.getElementById('phoneBtn');
+            if (phoneBtn) {
+                phoneBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const phone = '+254758451324';
+                    this.textContent = phone;
+                    this.style.color = '#64FFDA';
+                    this.style.pointerEvents = 'none';
+                    navigator.clipboard.writeText(phone).then(() => {
+                        setTimeout(() => {
+                            this.textContent = '📋 Copied!';
+                            setTimeout(() => {
+                                this.textContent = 'Reveal Number →';
+                                this.style.color = '';
+                                this.style.pointerEvents = '';
+                            }, 2000);
+                        }, 500);
+                    }).catch(() => {
+                        // Fallback
+                    });
+                });
+            }
+
+            // Footer links
+            document.getElementById('footerGitHub')?.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open('https://github.com/Denish945', '_blank');
+            });
+
+            document.getElementById('footerLinkedIn')?.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.open('https://linkedin.com/in/samson-denish-535417336', '_blank');
+            });
+
+            document.getElementById('footerEmail')?.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.location.href = 'mailto:denishwere.articles@gmail.com';
+            });
         });
     </script>
 </body>

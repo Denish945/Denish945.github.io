@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rapid Deployment Radar System - Open source pulse linear frequency modulated phased array radar by Samson Were" />
+    <title>Rapid Deployment Radar System · Samson Were</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Samson Denish Were</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../aviation.html">Aviation Career</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <a href="../projects.html" class="back-link">← Back to Projects</a>
+                    <span class="project-hero-badge">SYSTEMS ENGINEERING · OPEN SOURCE</span>
+                    <h1>Rapid Deployment Radar System</h1>
+                    <p class="project-hero-subtitle">
+                        Open-source pulse linear frequency modulated phased array radar system designed for rapid deployment in surveillance, reconnaissance, and situational awareness applications.
+                    </p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Status</span>
+                            <span class="meta-value" style="color: #64FFDA;">Alpha</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Timeline</span>
+                            <span class="meta-value">Jan 2025 - Aug 2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Frequency</span>
+                            <span class="meta-value">10.5 GHz</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">License</span>
+                            <span class="meta-value" style="color: #64FFDA;">MIT / CERN-OHL-P</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-grid">
+                    <div class="project-content">
+                        <h2>Project Overview</h2>
+                        <p>
+                            The Rapid Deployment Radar System is an open-source, low-cost 10.5 GHz phased array radar system featuring Pulse Linear Frequency Modulated (LFM) modulation. Designed for researchers, drone developers, and serious SDR enthusiasts who want to explore and experiment with phased array radar technology.
+                        </p>
+                        
+                        <h3>Purpose</h3>
+                        <p>
+                            This project aims to democratize radar technology by providing a fully open-source, modular, and hackable radar system. Whether you're a university researcher, a drone startup, or an advanced maker, it offers a platform for experimenting with beamforming, pulse compression, Doppler processing, and target tracking.
+                        </p>
+
+                        <h3>Key Features</h3>
+                        <ul class="features-list">
+                            <li>
+                                <strong>Open Source Hardware &amp; Software</strong>
+                                <span>Complete schematics, PCB layouts, firmware, and software available.</span>
+                            </li>
+                            <li>
+                                <strong>Full Electronic Beam Steering</strong>
+                                <span>±45° electronic steering in elevation and azimuth.</span>
+                            </li>
+                            <li>
+                                <strong>Advanced Signal Processing</strong>
+                                <span>On-board FPGA handles pulse compression, Doppler FFT, MTI, and CFAR.</span>
+                            </li>
+                            <li>
+                                <strong>Python GUI</strong>
+                                <span>User-friendly interface with map integration.</span>
+                            </li>
+                            <li>
+                                <strong>GPS/IMU Integration</strong>
+                                <span>Real-time position and attitude correction.</span>
+                            </li>
+                            <li>
+                                <strong>Modular Design</strong>
+                                <span>Separate power management, frequency synthesis, and RF boards.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="sidebar-card" style="background: rgba(10, 25, 47, 0.95); border: 1px solid rgba(100, 255, 218, 0.15);">
+                            <h4>Tech Specs</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1rem; margin: 1rem 0;">
+                                <span style="color: #8892B0; font-size: 0.85rem;">Frequency</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">10.5 GHz</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Beam Steering</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">±45° Electronic</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Mechanical Scan</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">360° (Stepper)</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Processing</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">FPGA + STM32</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Interface</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">USB + Python GUI</span>
+                            </div>
+                            <hr style="border: none; border-top: 1px solid rgba(100, 255, 218, 0.1); margin: 1rem 0;" />
+                            <h4>Resources</h4>
+                            <div style="margin-top: 0.5rem;">
+                                <a href="https://github.com/NawfalMotii79/PLFM_RADAR" target="_blank" rel="noopener noreferrer" style="display: block; padding: 0.4rem 0; color: #64FFDA; text-decoration: none; font-size: 0.9rem;">
+                                    📂 GitHub Repository →
+                                </a>
+                                <a href="#" style="display: block; padding: 0.4rem 0; color: #64FFDA; text-decoration: none; font-size: 0.9rem;">
+                                    📄 Documentation →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Architecture -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>System Architecture</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem; color: #8892B0;">
+                    Main sub-systems and their interconnections
+                </p>
+                <div class="architecture-diagram">
+                    <div class="arch-container">
+                        <div class="arch-layer">
+                            <h4>Power Management Board</h4>
+                            <div class="arch-components">
+                                <span>Voltage Regulation</span>
+                                <span>Filtering</span>
+                                <span>Sequencing</span>
+                            </div>
+                        </div>
+                        <div class="arch-arrow">▼</div>
+                        <div class="arch-layer">
+                            <h4>Frequency Synthesizer Board</h4>
+                            <div class="arch-components">
+                                <span>AD9523-1 Clock Gen</span>
+                                <span>2× ADF4382 Synthesizers</span>
+                                <span>Phase Aligned Clocks</span>
+                            </div>
+                        </div>
+                        <div class="arch-arrow">▼</div>
+                        <div class="arch-layer">
+                            <h4>Main Board</h4>
+                            <div class="arch-components">
+                                <span>DAC (Chirp Gen)</span>
+                                <span>2× LTC5552 Mixers</span>
+                                <span>4× ADAR1000 Phase Shifters</span>
+                                <span>16× ADTR1107 FEM</span>
+                            </div>
+                        </div>
+                        <div class="arch-arrow">▼</div>
+                        <div class="arch-layer">
+                            <h4>Processing</h4>
+                            <div class="arch-components">
+                                <span>XC7A50T FPGA</span>
+                                <span>STM32F746 µC</span>
+                                <span>USB Interface</span>
+                            </div>
+                        </div>
+                        <div class="arch-arrow">▼</div>
+                        <div class="arch-layer">
+                            <h4>Antenna Array</h4>
+                            <div class="arch-components">
+                                <span>Patch Array</span>
+                                <span>Slotted Waveguide</span>
+                                <span>Stepper Motor Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="architecture-details">
+                    <h3>Processing Pipeline</h3>
+                    <div class="principle-grid">
+                        <div class="principle-card">
+                            <h4>Waveform Generation</h4>
+                            <p>DAC creates LFM chirps for transmission.</p>
+                        </div>
+                        <div class="principle-card">
+                            <h4>Up/Down Conversion</h4>
+                            <p>LTC5552 mixers handle frequency translation.</p>
+                        </div>
+                        <div class="principle-card">
+                            <h4>Beam Steering</h4>
+                            <p>ADAR1000 phase shifters control 16 elements.</p>
+                        </div>
+                        <div class="principle-card">
+                            <h4>Signal Processing (FPGA)</h4>
+                            <p>Pulse compression, Doppler FFT, MTI &amp; CFAR.</p>
+                        </div>
+                        <div class="principle-card">
+                            <h4>System Management (STM32)</h4>
+                            <p>Power sequencing, peripheral config, GPS/IMU.</p>
+                        </div>
+                        <div class="principle-card">
+                            <h4>Visualization (Python GUI)</h4>
+                            <p>Real-time target plotting, map integration.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Components -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Key Components</h2>
+                <div class="module-grid">
+                    <div class="module-card">
+                        <div class="module-icon">⚡</div>
+                        <h4>Power Management</h4>
+                        <p>Supplies all voltage levels with proper filtering and sequencing (ensured by microcontroller).</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🔄</div>
+                        <h4>Frequency Synthesis</h4>
+                        <p>AD9523-1 low jitter clock generator with 2× ADF4382 synthesizers for RX and TX chains.</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">📡</div>
+                        <h4>RF Front End</h4>
+                        <p>16× ADTR1107 FEM for LNA and PA stages, 4× ADAR1000 phase shifters for beamforming.</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🧠</div>
+                        <h4>Processing</h4>
+                        <p>XC7A50T FPGA for signal processing, STM32F746 for system management and control.</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🌍</div>
+                        <h4>Sensors</h4>
+                        <p>GPS (UM982), GY-85 IMU, BMP180 barometer for position, attitude, and altitude data.</p>
+                    </div>
+                    <div class="module-card">
+                        <div class="module-icon">🖥️</div>
+                        <h4>GUI</h4>
+                        <p>Python-based interface with real-time target plotting, map integration, and radar control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Versions -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Versions</h2>
+                <div class="applications-grid">
+                    <div class="app-card" style="border-color: rgba(100, 255, 218, 0.3);">
+                        <div class="app-icon">📡</div>
+                        <h4>AERIS-10N (Nexus)</h4>
+                        <p><strong>Range:</strong> 3 km</p>
+                        <p><strong>Antenna:</strong> 8×16 Patch Array</p>
+                        <p><strong>Output:</strong> ~1W × 16</p>
+                        <p style="font-size: 0.85rem; color: #64FFDA; margin-top: 0.5rem;">Compact · Rapid Deployment</p>
+                    </div>
+                    <div class="app-card" style="border-color: rgba(100, 255, 218, 0.3);">
+                        <div class="app-icon">📡</div>
+                        <h4>AERIS-10X (Extended)</h4>
+                        <p><strong>Range:</strong> 20 km</p>
+                        <p><strong>Antenna:</strong> 32×16 Slotted Waveguide</p>
+                        <p><strong>Output:</strong> 10W × 16 (GaN)</p>
+                        <p style="font-size: 0.85rem; color: #64FFDA; margin-top: 0.5rem;">Long Range · High Power</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Schematic &amp; PCB Design</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem; color: #8892B0;">
+                    System boards and antenna array
+                </p>
+                <div class="gallery-grid" id="radarGallery">
+                    <div class="gallery-item" data-full="../assets/images/projects/radar/antenna-array.jpg">
+                        <img src="../assets/images/projects/radar/antenna-array.jpg" alt="Antenna Array" loading="lazy" />
+                        <div class="gallery-caption">Antenna Array</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/radar/main-board.jpg">
+                        <img src="../assets/images/projects/radar/main-board.jpg" alt="Main Board" loading="lazy" />
+                        <div class="gallery-caption">Main Board</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/radar/dashboard.jpg">
+                        <img src="../assets/images/projects/radar/dashboard.jpg" alt="Dashboard" loading="lazy" />
+                        <div class="gallery-caption">Python GUI Dashboard</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Project Resources</h2>
+                <div class="docs-grid">
+                    <div class="doc-card">
+                        <span class="doc-icon">📂</span>
+                        <h4>GitHub Repository</h4>
+                        <p>Complete source code and design files</p>
+                        <a href="https://github.com/NawfalMotii79/PLFM_RADAR" target="_blank" rel="noopener noreferrer" class="doc-link">View on GitHub →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">📐</span>
+                        <h4>Schematics &amp; Boards</h4>
+                        <p>PCB layouts and production files</p>
+                        <a href="#" class="doc-link">View Schematics →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">📄</span>
+                        <h4>Documentation</h4>
+                        <p>System architecture and user guides</p>
+                        <a href="#" class="doc-link">Read Docs →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">🖥️</span>
+                        <h4>Python GUI</h4>
+                        <p>Real-time visualization and control</p>
+                        <a href="#" class="doc-link">Download →</a>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem; padding: 1.5rem; background: rgba(100, 255, 218, 0.05); border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                    <p style="color: #8892B0; font-size: 0.95rem;">
+                        ⭐ <strong style="color: #64FFDA;">Open Source Radar Technology</strong> — 
+                        Hardware: <strong style="color: #CCD6F6;">CERN-OHL-P</strong> · 
+                        Software: <strong style="color: #CCD6F6;">MIT</strong>
+                    </p>
+                    <p style="color: #8892B0; font-size: 0.85rem; margin-top: 0.5rem;">
+                        PRs Welcome · Status: Alpha · Features: Work in Progress
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Samson Denish Were. Built with <span style="color:#FF6B6B;">❤</span> on GitHub Pages.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Denish945" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:denishwere.articles@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>

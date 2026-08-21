@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Class 2 Network Communication PDB - J1850VPW Module with XC68HC58 by Samson Were" />
+    <title>Class 2 Network PDB · Samson Were</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">Samson Denish Were</a>
+            <ul class="nav-links">
+                <li><a href="../">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../aviation.html">Aviation Career</a></li>
+                <li><a href="../projects.html" class="active">Projects</a></li>
+                <li><a href="../experience.html">Experience</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Project Hero -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content">
+                    <a href="../projects.html" class="back-link">← Back to Projects</a>
+                    <span class="project-hero-badge">ELECTRONICS · OPEN SOURCE</span>
+                    <h1>Class 2 Network Communication PDB</h1>
+                    <p class="project-hero-subtitle">
+                        J1850VPW Module based on the Motorola XC68HC58 datalink IC — designed for GM class 2 serial network communication.
+                    </p>
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Status</span>
+                            <span class="meta-value" style="color: #64FFDA;">Complete</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Timeline</span>
+                            <span class="meta-value">Jul 2026 - Aug 2026</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">License</span>
+                            <span class="meta-value" style="color: #64FFDA;">Open Source</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Revision</span>
+                            <span class="meta-value">Rev C</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Role</span>
+                            <span class="meta-value">Contributor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-grid">
+                    <div class="project-content">
+                        <h2>Project Overview</h2>
+                        <p>
+                            This module is designed to transmit and receive data on the GM class 2 serial network. It uses the older Motorola XC68HC58 datalink IC, providing reliable communication on the J1850VPW bus.
+                        </p>
+                        
+                        <h3>Purpose</h3>
+                        <p>
+                            The Class 2 Network Communication PDB enables interfacing with GM vehicles' class 2 serial networks for diagnostics, data logging, and telemetry applications. It provides a cost-effective solution for accessing vehicle data networks.
+                        </p>
+
+                        <h3>Revision C Updates</h3>
+                        <p>
+                            Rev C is the current version, featuring silkscreen corrections for improved clarity. Key features include:
+                        </p>
+                        <ul class="features-list">
+                            <li>
+                                <strong>JP1 Jumper</strong>
+                                <span>Enables 14V output from the module when jumped. Note that the boost converter can only support about 100mA.</span>
+                            </li>
+                            <li>
+                                <strong>Boost Converter</strong>
+                                <span>Useful as a telemetry tool to measure at your microcontroller and confirm the boost is working, or to power an indicator.</span>
+                            </li>
+                            <li>
+                                <strong>Mode Pins</strong>
+                                <span>Mode 0 and Mode 1 should be left disconnected — they won't connect with this module.</span>
+                            </li>
+                        </ul>
+
+                        <h3>Design Files</h3>
+                        <p>
+                            KiCad footprint and symbol are available (same as the GMLAN module project). Leave Mode 0 and Mode 1 disconnected as they are not compatible with this module.
+                        </p>
+                    </div>
+                    <div class="project-sidebar">
+                        <div class="sidebar-card" style="background: rgba(10, 25, 47, 0.95); border: 1px solid rgba(100, 255, 218, 0.15);">
+                            <h4>Tech Specs</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem 1rem; margin: 1rem 0;">
+                                <span style="color: #8892B0; font-size: 0.85rem;">IC</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">XC68HC58</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Protocol</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">J1850VPW</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Network</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">GM Class 2</span>
+                                <span style="color: #8892B0; font-size: 0.85rem;">Output</span>
+                                <span style="color: #CCD6F6; font-weight: 600; text-align: right;">14V (100mA max)</span>
+                            </div>
+                            <hr style="border: none; border-top: 1px solid rgba(100, 255, 218, 0.1); margin: 1rem 0;" />
+                            <h4>Resources</h4>
+                            <div style="margin-top: 0.5rem;">
+                                <a href="https://github.com/garnerm91/J1850" target="_blank" rel="noopener noreferrer" style="display: block; padding: 0.4rem 0; color: #64FFDA; text-decoration: none; font-size: 0.9rem;">
+                                    📂 Source Code →
+                                </a>
+                                <a href="https://github.com/garnerm91/SWCAN/tree/main/FootprintPlusSym" target="_blank" rel="noopener noreferrer" style="display: block; padding: 0.4rem 0; color: #64FFDA; text-decoration: none; font-size: 0.9rem;">
+                                    📐 KiCad Footprint & Symbol →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schematic & PCB -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Schematic &amp; PCB Design</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem; color: #8892B0;">
+                    Rev C board with silkscreen corrections
+                </p>
+                <div class="gallery-grid" id="class2Gallery">
+                    <div class="gallery-item" data-full="../assets/images/projects/class2-pdb/schematic.jpg">
+                        <img src="../assets/images/projects/class2Network/layout.png" alt="Class 2 Network PDB Schematic" loading="lazy" />
+                        <div class="gallery-caption">Schematic Diagram</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/class2-pdb/pcb-top.jpg">
+                        <img src="../assets/images/projects/class2Network/circuits.png" alt="Class 2 Network PCB Top View" loading="lazy" />
+                        <div class="gallery-caption">PCB Top View</div>
+                    </div>
+                    <div class="gallery-item" data-full="../assets/images/projects/class2-pdb/pcb-bottom.jpg">
+                        <img src="../assets/images/projects/class2Network/bread_board.png" alt="Class 2 Network PCB Bottom View" loading="lazy" />
+                        <div class="gallery-caption">PCB Bottom View</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="project-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="challenges-grid">
+                    <div class="challenge-card">
+                        <div class="challenge-icon">📡</div>
+                        <h4>J1850VPW Protocol</h4>
+                        <p>Supports GM class 2 serial network communication using the Variable Pulse Width modulation protocol.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <div class="challenge-icon">⚡</div>
+                        <h4>14V Boost Output</h4>
+                        <p>Selectable 14V output via JP1 jumper, with 100mA max current for telemetry and indicator applications.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <div class="challenge-icon">🛠️</div>
+                        <h4>KiCad Compatible</h4>
+                        <p>Includes footprint and symbol files compatible with KiCad, making it easy to integrate into your designs.</p>
+                    </div>
+                    <div class="challenge-card">
+                        <div class="challenge-icon">🔓</div>
+                        <h4>Open Source</h4>
+                        <p>Full source code and design files available on GitHub for modification and customization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Resources -->
+        <section class="project-section alt-bg">
+            <div class="container">
+                <h2>Project Resources</h2>
+                <div class="docs-grid">
+                    <div class="doc-card">
+                        <span class="doc-icon">📂</span>
+                        <h4>Source Code</h4>
+                        <p>GitHub repository with full source code</p>
+                        <a href="https://github.com/garnerm91/J1850" target="_blank" rel="noopener noreferrer" class="doc-link">View on GitHub →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">📐</span>
+                        <h4>KiCad Files</h4>
+                        <p>Footprint and symbol for KiCad</p>
+                        <a href="https://github.com/garnerm91/SWCAN/tree/main/FootprintPlusSym" target="_blank" rel="noopener noreferrer" class="doc-link">Download →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">📄</span>
+                        <h4>Datasheet</h4>
+                        <p>Motorola XC68HC58 datalink IC</p>
+                        <a href="#" class="doc-link">View Datasheet →</a>
+                    </div>
+                    <div class="doc-card">
+                        <span class="doc-icon">🛒</span>
+                        <h4>Purchase</h4>
+                        <p>Buy assembled modules on eBay</p>
+                        <a href="https://www.ebay.com/usr/mattus.i8wvojtcv" target="_blank" rel="noopener noreferrer" class="doc-link">View on eBay →</a>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem; padding: 1rem; background: rgba(100, 255, 218, 0.05); border-radius: 0.5rem; border: 1px solid rgba(100, 255, 218, 0.1);">
+                    <p style="color: #8892B0; font-size: 0.9rem;">
+                        💡 <strong style="color: #CCD6F6;">Recommendation:</strong> Review the XC68HC58 datasheet before getting started with this module.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Samson Denish Were. Built with <span style="color:#FF6B6B;">❤</span> on GitHub Pages.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Denish945" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/samsonwere" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="mailto:denishwere.articles@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/projects.js"></script>
+    <script src="../js/gallery.js"></script>
+</body>
+</html>
