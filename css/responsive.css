@@ -1,65 +1,160 @@
 /* ============================================
-   Responsive Enhancements
+   Overview Top Row — Ongoing Courses at Top-Right
    ============================================ */
 
-/* This file works alongside style.css to ensure
-   the layout is perfect on all devices. The main
-   responsive rules are already in style.css,
-   but we can add more specific overrides here. */
-
-@media (max-width: 768px) {
-    /* Improve touch targets for mobile */
-    .btn {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
-    }
-
-    .nav-links a {
-        font-size: 1rem;
-        padding: 0.5rem 0;
-        display: block;
-        text-align: center;
-    }
-
-    .nav-links a::after {
-        display: none;
-    }
-
-    .hero-image-placeholder svg {
-        max-width: 250px;
-    }
+.overview-top-row {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 1.5rem;
+    align-items: start;
+    margin-bottom: 1rem;
 }
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 1rem;
+.overview-heading h2 {
+    margin-top: 0;
+}
+
+.ongoing-card {
+    background: linear-gradient(135deg, rgba(100, 255, 218, 0.08), rgba(255, 215, 0, 0.05));
+    border: 1px solid rgba(100, 255, 218, 0.35);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 4px 20px rgba(100, 255, 218, 0.08);
+}
+
+.ongoing-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.ongoing-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.ongoing-content {
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+}
+
+.ongoing-subtitle {
+    color: #64FFDA;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.ongoing-panel {
+    background: rgba(10, 25, 47, 0.6);
+    border: 1px solid rgba(100, 255, 218, 0.15);
+    border-radius: 8px;
+    padding: 0.75rem 0.85rem;
+}
+
+.ongoing-label {
+    color: #CCD6F6;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.module-chip-row {
+    margin-top: 0.3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.15rem;
+}
+
+.ongoing-legend {
+    margin-top: 0.35rem;
+    display: flex;
+    gap: 0.6rem;
+    font-size: 0.6rem;
+    flex-wrap: wrap;
+    color: #8892B0;
+    align-items: center;
+}
+
+.ongoing-legend span:first-child,
+.ongoing-legend span:nth-child(3) {
+    font-size: 0.75rem;
+}
+
+.ongoing-meta {
+    margin-top: 0.3rem;
+    font-size: 0.68rem;
+    color: #8892B0;
+}
+
+.ongoing-divider {
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(100, 255, 218, 0.12);
+}
+
+.progress-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.progress-track {
+    margin: 0.5rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    height: 6px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #64FFDA, #FFD700);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.ongoing-note {
+    font-size: 0.7rem;
+    color: #8892B0;
+    margin-top: 0.3rem;
+}
+
+.ongoing-tags {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.ongoing-tags span {
+    background: rgba(100, 255, 218, 0.08);
+    color: #64FFDA;
+    font-size: 0.65rem;
+    padding: 0.15rem 0.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(100, 255, 218, 0.15);
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 1024px) {
+    .overview-top-row {
+        grid-template-columns: 1fr;
     }
 
-    .expertise-block {
-        font-size: 0.8rem;
-        text-align: center;
-    }
-
-    .expertise-title {
-        font-size: 0.6rem;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    .hero-actions .btn {
-        width: 100%;
-        text-align: center;
-    }
-
-    .stat-number {
-        font-size: 1.5rem;
-    }
-
-    .stat-label {
-        font-size: 0.75rem;
+    .ongoing-card {
+        position: static;
     }
 }
