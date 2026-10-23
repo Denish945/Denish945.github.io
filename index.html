@@ -18,9 +18,9 @@
 <body>
     <header>
         <nav class="container">
-            <a href="/" class="logo">Samson Denish Were</a>
+            <a href="index.html" class="logo">Samson Denish Were</a>
             <ul class="nav-links">
-                <li><a href="/" class="active">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="aviation.html">Aviation Career</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -44,11 +44,11 @@
                     <!-- The visual "hero" text -->
                     <div class="hero-badge">AERONAUTICAL ENGINEER</div>
                     <h1>Samson Denish Were</h1>
-                    <h2>Software Systems Architect & Developer</h2>
+                    <h2>Software Systems Architect &amp; Developer</h2>
                     <p class="hero-tagline">
                         Designing aircraft, developing engineering systems, and architecting software at the intersection of aviation, aerospace, and technology.
                     </p>
-                    
+
                     <!-- The three key areas as visual blocks -->
                     <div class="hero-expertise">
                         <div class="expertise-block">
@@ -75,15 +75,24 @@
                 <!-- Profile Image OR SVG Placeholder -->
                 <div class="hero-visual">
                     <div class="hero-image-wrapper">
-                        <!-- Try to load profile image, fallback to SVG if it fails -->
-                        <img 
-                            src="assets/profile.jpeg" 
-                            alt="Samson Denish Were - Aeronautical Engineer" 
+                        <!--
+                          NOTE ON THE PROFILE IMAGE:
+                          - This path assumes: index.html is next to an `assets/` folder
+                            containing `profile.jpeg` (exactly that name & casing).
+                          - If your file is named differently (e.g. profile.jpg,
+                            Profile.jpeg, or lives in assets/images/), update the
+                            src below to match EXACTLY.
+                          - The data-fallback attribute tells main.js to swap in
+                            the SVG placeholder if the image fails to load.
+                        -->
+                        <img
+                            src="assets/profile.jpeg"
+                            alt="Samson Denish Were - Aeronautical Engineer"
                             class="hero-profile-image"
-                            onerror="this.style.display='none'; document.getElementById('fallbackSvg').style.display='block';"
+                            data-fallback="fallbackSvg"
                         />
                         <div id="fallbackSvg" class="hero-image-placeholder" style="display: none;">
-                            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Engineering placeholder graphic">
                                 <circle cx="200" cy="200" r="180" stroke="#00D4FF" stroke-width="2" stroke-dasharray="10 10" />
                                 <path d="M80 200 L320 200" stroke="#00D4FF" stroke-width="1.5" />
                                 <path d="M200 80 L200 320" stroke="#00D4FF" stroke-width="1.5" />
@@ -120,7 +129,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- ENGINEERING PHILOSOPHY -->
         <section id="philosophy" class="philosophy-section">
             <div class="container">
